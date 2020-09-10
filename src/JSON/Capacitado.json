@@ -1,0 +1,60 @@
+{
+    "Ciencia": [
+        {"label": "Quimica", "value": "Quimica"},
+        {"label": "Fisica", "value": "Fisica"},
+        {"label": "Biologia", "value": "Biologia"},
+        {"label": "Geologia", "value": "Geologia"},
+        {"label": "Ecologia", "value": "Ecologia"},
+        {"label": "Zoologia", "value": "Zoologia"},
+        {"label": "Botanica", "value": "Botanica"},
+        {"label": "Astronomia", "value": "Astronomia"}
+    ],
+    "Lenguaje": [
+        {"label": "Gramatica y Ortografia", "value": "Gramatica y Ortografia"},
+        {"label": "Semantica", "value": "Semantica"},
+        {"label": "Morfologia", "value": "Morfologia"},
+        {"label": "Fonologia", "value": "Fonologia"},
+        {"label": "Sintaxis", "value": "Sintaxis"},
+        {"label": "Fonetica", "value": "Fonetica"},
+        {"label": "Pragmatica", "value": "Pragmatica"},
+        {"label": "Lexicografia practica", "value": "Lexicografia practica"},
+        {"label": "Lexicografia teorica", "value": "Lexicografia teorica"},
+        {"label": "Lexicologia", "value": "Lexicologia"}
+    ],
+    "Matematica": [
+        {"label": "Algebra", "value": "Algebra"},
+        {"label": "Aritmetica", "value": "Aritmetica"},
+        {"label": "Analisis", "value": "Analisis"},
+        {"label": "Geometria", "value": "Geometria"},
+        {"label": "Estadistica y probabilidad", "value": "Estadistica y probabilidad"}
+    ],
+    "Sociales": [
+        {"label": "Antropologia", "value": "Antropologia"},
+        {"label": "Sociologia", "value": "Sociologia"},
+        {"label": "Geografia", "value": "Geografia"},
+        {"label": "Historia", "value": "Historia"},
+        {"label": "Derecho", "value": "Derecho"},
+        {"label": "Politica", "value": "Politica"},
+        {"label": "Economia", "value": "Economia"},
+        {"label": "Comunicacion", "value": "Comunicacion"},
+        {"label": "Pedagogia", "value": "Pedagogia"},
+        {"label": "Psicologia", "value": "Psicologia"}
+    ],
+    "Informatica": [
+        {"label": "Base de datos", "value": "Base de datos"},
+        {"label": "Computacion cientifica", "value": "Computacion cientifica"},
+        {"label": "Compiladores y lenguajes de programacion", "value": "Compiladores y lenguajes de programacion"},
+        {"label": "Comunicacion y seguridad", "value": "Comunicacion y seguridad"},
+        {"label": "Inteligencia artificial", "value": "Inteligencia artificial"},
+        {"label": "Compilacion grafica", "value": "Compilacion grafica"}
+    ],
+    "Idiomas": [
+        {"label": "Ingles", "value": "Ingles"},
+        {"label": "Frances", "value": "Frances"},
+        {"label": "Español", "value": "Español"},
+        {"label": "Aleman", "value": "Aleman"},
+        {"label": "Fonetica", "value": "Fonetica"},
+        {"label": "Tecnicas de traduccion", "value": "Tecnicas de traduccion"},
+        {"label": "Comunicacion oral y escrita", "value": "Comunicacion oral y escrita"}
+    ]
+}

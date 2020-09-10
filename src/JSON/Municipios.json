@@ -1,0 +1,404 @@
+[
+    {"label": "Ahuachapán", "value": {
+        "Departamento": "Ahuachapán",
+        "Municipios": [
+        {"value": "Ahuachapán", "label":  "Ahuachapán"},
+        {"value": "Apaneca ", "label":  "Apaneca"},
+        {"value": "Atiquizaya", "label":  "Atiquizaya"},
+        {"value": "Concepción de Ataco", "label":  "Concepción de Ataco"},
+        {"value": "El Refugio", "label":  "El Refugio"},
+        {"value": "Guaymango", "label":  "Guaymango"},
+        {"value": "Jujutla", "label":  "Jujutla"},
+        {"value": "San Francisco de Menéndez", "label":  "San Francisco de Menéndez"},
+        {"value": "San Lorenzo", "label":  "San Lorenzo"},
+        {"value": "San Pedro Puxtla", "label":  "San Pedro Puxtla"},
+        {"value": "Tacuba", "label":  "Tacuba"},
+        {"value": "Turín", "label":  "Turín"}
+        
+        ]
+    }},
+
+
+
+    {"label": "Cabañas", "value": {
+        "Departamento": "Cabañas",
+        "Municipios": [
+        {"value": "Cinquera", "label":  "Cinquera"},
+        {"value": "Dolores", "label":  "Dolores"},
+        {"value": "Guacotecti", "label":  "Guacotecti"},
+        {"value": "Ilobasco", "label":  "Ilobasco"},
+        {"value": "Jutiapa", "label":  "Jutiapa"},
+        {"value": "San Isidro", "label":  "San Isidro"},
+        {"value": "Sensuntepeque", "label":  "Sensuntepeque"},
+        {"value": "Tejutepeque", "label":  "Tejutepeque"},
+        {"value": "Victoria", "label":  "Victoria"}
+
+        
+        ]
+    }},
+
+
+
+    {"label": "Chalatenango", "value": {
+        "Departamento": "Chalatenango",
+        "Municipios": [
+        {"value": "Agua Caliente", "label":  "Agua Caliente"},
+        {"value": "Arcatao", "label":  "Arcatao"},
+        {"value": "Azacualpa", "label":  "Azacualpa"},
+        {"value": "Cancasque   ", "label":  "Cancasque"},
+        {"value": "Chalatenango", "label":  "Chalatenango"},
+        {"value": "Citalá", "label":  "Citalá"},
+        {"value": "Comalapa", "label":  "Comalapa"},
+        {"value": "Concepción Quezaltepeque", "label":  "Concepción Quezaltepeque"},
+        {"value": "Dulce Nombre de María", "label":  "Dulce Nombre de María"},
+        {"value": "El Carrizal", "label":  "El Carrizal"},
+        {"value": "El Paraíso", "label":  "El Paraíso"},
+        {"value": "La Laguna", "label":  "La Laguna"},
+        {"value": "La Palma", "label":  "La Palma"},
+        {"value": "La Reina", "label":  "La Reina"},
+        {"value": "Las Flores", "label":  "Las Flores"},
+        {"value": "Las Vueltas", "label":  "Las Vueltas"},
+        {"value": "Nombre de Jesús", "label":  "Nombre de Jesús"},
+        {"value": "Nueva Concepción", "label":  "Nueva Concepción"},
+        {"value": "Nueva Trinidad", "label":  "Nueva Trinidad"},
+        {"value": "Ojos de Agua", "label":  "Ojos de Agua"},
+        {"value": "Potonico", "label":  "Potonico"},
+        {"value": "San Antonio de la Cruz", "label":  "San Antonio de la Cruz"},
+        {"value": "San Antonio Los Ranchos", "label":  "San Antonio Los Ranchos"},
+        {"value": "San Fernando", "label":  "San Fernando"},
+        {"value": "San Francisco Lempa", "label":  "San Francisco Lempa"},
+        {"value": "San Francisco Morazán", "label":  "San Francisco Morazán"},
+        {"value": "San Ignacio", "label":  "San Ignacio"},
+        {"value": "San Isidro Labrador", "label":  "San Isidro Labrador"},
+        {"value": "San Luis del Carmen", "label":  "San Luis del Carmen"},
+        {"value": "San Miguel de Mercedes", "label":  "San Miguel de Mercedes"},
+        {"value": "San Rafael", "label":  "San Rafael"},
+        {"value": "Santa Rita", "label":  "Santa Rita"},
+        {"value": "Tejutla", "label":  "Tejutla"}
+
+        ]
+    }},
+
+
+
+    {"label": "Cuscatlan", "value": {
+        "Departamento": "Cuscatlan",
+        "Municipios": [
+        {"value": "Candelaria", "label":  "Candelaria"},
+        {"value": "Cojutepeque", "label":  "Cojutepeque"},
+        {"value": "El Carmen", "label":  "El Carmen"},
+        {"value": "El Rosario", "label":  "El Rosario"},
+        {"value": "Monte San Juan", "label":  "Monte San Juan"},
+        {"value": "Oratorio de Concepción", "label":  "Oratorio de Concepción"},
+        {"value": "San Bartolomé Perulapía", "label":  "San Bartolomé Perulapía"},
+        {"value": "San Cristóbal", "label":  "San Cristóbal"},
+        {"value": "San José Guayabal", "label":  "San José Guayabal"},
+        {"value": "San Pedro Perulapán", "label":  "San Pedro Perulapán"},
+        {"value": "San Rafael Cedros", "label":  "San Rafael Cedros"},
+        {"value": "San Ramón", "label":  "San Ramón"},
+        {"value": "Santa Cruz Analquito", "label":  "Santa Cruz Analquito"},
+        {"value": "Santa Cruz Michapa", "label":  "Santa Cruz Michapa"},
+        {"value": "Suchitoto", "label":  "Suchitoto"},
+        {"value": "Tenancingo", "label":  "Tenancingo"}
+
+        ]
+    }},
+
+
+
+
+    {"label": "La Libertad", "value": {
+        "Departamento": "La Libertad",
+        "Municipios": [
+        {"value": "Antiguo Cuscatlán", "label":  "Antiguo Cuscatlán"},
+        {"value": "Chiltiupan", "label":  "Chiltiupan"},
+        {"value": "Ciudad Arce", "label":  "Ciudad Arce"},
+        {"value": "Colón", "label":  "Colón"},
+        {"value": "Comasagua", "label":  "Comasagua"},
+        {"value": "Huizúcar", "label":  "Huizúcar"},
+        {"value": "Jayaque", "label":  "Jayaque"},
+        {"value": "Jicalapa", "label":  "Jicalapa"},
+        {"value": "La Libertad", "label":  "La Libertad"},
+        {"value": "Nuevo Cuscatlán", "label":  "Nuevo Cuscatlán"},
+        {"value": "Quezaltepeque", "label":  "Quezaltepeque"},
+        {"value": "Sacacoyo", "label":  "Sacacoyo"},
+        {"value": "San José Villanueva", "label":  "San José Villanueva"},
+        {"value": "San Juan Opico", "label":  "San Juan Opico"},
+        {"value": "San Matías", "label":  "San Matías"},
+        {"value": "San Pablo Tacachico", "label":  "San Pablo Tacachico"},
+        {"value": "Santa Tecla", "label":  "Santa Tecla"},
+        {"value": "Talnique", "label":  "Talnique"},
+        {"value": "Tamanique", "label":  "Tamanique"},
+        {"value": "Teotepeque", "label":  "Teotepeque"},
+        {"value": "Tepecoyo", "label":  "Tepecoyo"},
+        {"value": "Zaragoza", "label":  "Zaragoza"}
+
+        ]
+    }},
+
+
+
+
+    {"label": "La Paz", "value": {
+        "Departamento": "La Paz",
+        "Municipios": [
+        {"value": "Cuyultitan", "label":  "Cuyultitan"},
+        {"value": "El Rosario", "label":  "El Rosario"},
+        {"value": "Jerusalén", "label":  "Jerusalén"},
+        {"value": "Mercedes La Ceiba", "label":  "Mercedes La Ceiba"},
+        {"value": "Olocuilta", "label":  "Olocuilta"},
+        {"value": "Paraíso de Osorio", "label":  "Paraíso de Osorio"},
+        {"value": "San Antonio Masahuat", "label":  "San Antonio Masahuat"},
+        {"value": "San Emigdio", "label":  "San Emigdio"},
+        {"value": "San Francisco Chinameca", "label":  "San Francisco Chinameca"},
+        {"value": "San Juan Nonualco", "label":  "San Juan Nonualco"},
+        {"value": "San Juan Talpa", "label":  "San Juan Talpa"},
+        {"value": "San Juan Tepezontes", "label":  "San Juan Tepezontes"},
+        {"value": "San Luis La Herradura", "label":  "San Luis La Herradura"},
+        {"value": "San Luis Talpa", "label":  "San Luis Talpa"},
+        {"value": "San Miguel Tepezontes", "label":  "San Miguel Tepezontes"},
+        {"value": "San Pedro Masahuat", "label":  "San Pedro Masahuat"},
+        {"value": "San Pedro Nonualco", "label":  "San Pedro Nonualco"},
+        {"value": "San Rafael Obrajuelo", "label":  "San Rafael Obrajuelo"},
+        {"value": "Santa María Ostuma", "label":  "Santa María Ostuma"},
+        {"value": "Santiago Nonualco", "label":  "Santiago Nonualco"},
+        {"value": "Tapalhuaca", "label":  "Tapalhuaca"},
+        {"value": "Zacatecoluca", "label":  "Zacatecoluca"}
+
+        ]
+    }},
+
+
+
+    {"label": "La Unión", "value": {
+        "Departamento": "La Unión",
+        "Municipios": [
+        {"value": "Anamorós", "label":  "Anamorós"},
+        {"value": "Bolívar", "label":  "Bolívar"},
+        {"value": "Concepción de Oriente", "label":  "Concepción de Oriente"},
+        {"value": "Conchagua", "label":  "Conchagua"},
+        {"value": "El Carmen", "label":  "El Carmen"},
+        {"value": "El Sauce", "label":  "El Sauce"},
+        {"value": "Intipucá", "label":  "Intipucá"},
+        {"value": "La Unión", "label":  "La Unión"},
+        {"value": "Lisligue", "label":  "Lisligue"},
+        {"value": "Meanguera del Golfo", "label":  "Meanguera del Golfo"},
+        {"value": "Nueva Esparta", "label":  "Nueva Esparta"},
+        {"value": "Pasaquina", "label":  "Pasaquina"},
+        {"value": "Polorós", "label":  "Polorós"},
+        {"value": "San Alejo", "label":  "San Alejo"},
+        {"value": "San José", "label":  "San José"},
+        {"value": "Santa Rosa de Lima", "label":  "Santa Rosa de Lima"},
+        {"value": "Yayantique", "label":  "Yayantique"},
+        {"value": "Yucuaiquín", "label":  "Yucuaiquín"}
+        
+        ]
+    }},
+
+
+
+
+
+    {"label": "Morazan", "value": {
+        "Departamento": "Morazan",
+        "Municipios": [
+        {"value": "Arambala", "label":  "Arambala"},
+        {"value": "Cacaopera", "label":  "Cacaopera"},
+        {"value": "Chilanga", "label":  "Chilanga"},
+        {"value": "Corinto", "label":  "Corinto"},
+        {"value": "Delicias de Concepción", "label":  "Delicias de Concepción"},
+        {"value": "El Divisadero", "label":  "El Divisadero"},
+        {"value": "El Rosario", "label":  "El Rosario"},
+        {"value": "Gualococti", "label":  "Gualococti"},
+        {"value": "Guatajiagua", "label":  "Guatajiagua"},
+        {"value": "Joateca", "label":  "Joateca"},
+        {"value": "Jocoaitique", "label":  "Jocoaitique"},
+        {"value": "Jocoro", "label":  "Jocoro"},
+        {"value": "Lolotiquillo", "label":  "Lolotiquillo"},
+        {"value": "Meanguera", "label":  "Meanguera"},
+        {"value": "Osicala", "label":  "Osicala"},
+        {"value": "Perquín", "label":  "Perquín"},
+        {"value": "San Carlos", "label":  "San Carlos"},
+        {"value": "San Fernando", "label":  "San Fernando"},
+        {"value": "San Francisco Gotera", "label":  "San Francisco Gotera"},
+        {"value": "San Isidro", "label":  "San Isidro"},
+        {"value": "San Simón", "label":  "San Simón"},
+        {"value": "Sensembra", "label":  "Sensembra"},
+        {"value": "Sociedad", "label":  "Sociedad"},
+        {"value": "Torola", "label":  "Torola"},
+        {"value": "Yamabal", "label":  "Yamabal"},
+        {"value": "Yoloaiquín", "label":  "Yoloaiquín"}
+
+        ]
+    }},
+
+
+
+
+
+    {"label": "San Miguel", "value": {
+        "Departamento": "San Miguel",
+        "Municipios": [
+        {"value": "Carolina", "label":  "Carolina"},
+        {"value": "Chapeltique", "label":  "Chapeltique"},
+        {"value": "Chinameca", "label":  "Chinameca"},
+        {"value": "Chirilagua", "label":  "Chirilagua"},
+        {"value": "Ciudad Barrios", "label":  "Ciudad Barrios"},
+        {"value": "Comacarán", "label":  "Comacarán"},
+        {"value": "El Tránsito", "label":  "El Tránsito"},
+        {"value": "Lolotique", "label":  "Lolotique"},
+        {"value": "Moncagua", "label":  "Moncagua"},
+        {"value": "Nueva Guadalape", "label":  "Nueva Guadalape"},
+        {"value": "Nuevo Edén de San Juan", "label":  "Nuevo Edén de San Juan"},
+        {"value": "Quelepa", "label":  "Quelepa"},
+        {"value": "San Antonio", "label":  "San Antonio"},
+        {"value": "San Gerardo", "label":  "San Gerardo"},
+        {"value": "San Jorge", "label":  "San Jorge"},
+        {"value": "San Luis de la Reina", "label":  "San Luis de la Reina"},
+        {"value": "San Miguel", "label":  "San Miguel"},
+        {"value": "San Rafael Oriente", "label":  "San Rafael Oriente"},
+        {"value": "Sesori", "label":  "Sesori"},
+        {"value": "Uluazapa", "label":  "Uluazapa"}
+
+        ]
+    }},
+
+
+
+
+    {"label": "San Salvador", "value": {
+        "Departamento": "San Salvador",
+        "Municipios": [
+        {"value": "Aguilares", "label":  "Aguilares"},
+        {"value": "Apopa", "label":  "Apopa"},
+        {"value": "Ayutuxtepeque", "label":  "Ayutuxtepeque"},
+        {"value": "Cuscatancingo", "label":  "Cuscatancingo"},
+        {"value": "Delgado", "label":  "Delgado"},
+        {"value": "El Paisnal", "label":  "El Paisnal"},
+        {"value": "Guazapa", "label":  "Guazapa"},
+        {"value": "Ilopango", "label":  "Ilopango"},
+        {"value": "Mejicanos", "label":  "Mejicanos"},
+        {"value": "Nejapa", "label":  "Nejapa"},
+        {"value": "Panchilmaco", "label":  "Panchilmaco"},
+        {"value": "Rosario de Mora", "label":  "Rosario de Mora"},
+        {"value": "San Marcos", "label":  "San Marcos"},
+        {"value": "San Martin", "label":  "San Martin"},
+        {"value": "San Salvador", "label":  "San Salvador"},
+        {"value": "Santiago Texacuangos", "label":  "Santiago Texacuangos"},
+        {"value": "Santo Tomás", "label":  "Santo Tomás"},
+        {"value": "Soyapango", "label":  "Soyapango"},
+        {"value": "Tonacatepeque", "label":  "Tonacatepeque"}
+
+        ]
+    }},
+
+
+
+
+
+    {"label": "San Vicente", "value": {
+        "Departamento": "San Vicente",
+        "Municipios": [
+        {"value": "Apastepeque", "label":  "Apastepeque"},
+        {"value": "Guadalupe", "label":  "Guadalupe"},
+        {"value": "San Cayatecano Istepeque", "label":  "San Cayatecano Istepeque"},
+        {"value": "San Esteban Catarina", "label":  "San Esteban Catarina"},
+        {"value": "San Ildefonso", "label":  "San Ildefonso"},
+        {"value": "San Lorenzo", "label":  "San Lorenzo"},
+        {"value": "San Sebastian", "label":  "San Sebastian"},
+        {"value": "San Vicente", "label":  "San Vicente"},
+        {"value": "Santa Clara", "label":  "Santa Clara"},
+        {"value": "Santo Domingo", "label":  "Santo Domingo"},
+        {"value": "Tecoluca", "label":  "Tecoluca"},
+        {"value": "Tepetitán", "label":  "Tepetitán"},
+        {"value": "Verapaz", "label":  "Verapaz"}
+
+        ]
+    }},
+
+
+
+
+
+    {"label": "Santa Ana", "value": {
+        "Departamento": "Santa Ana",
+        "Municipios": [
+        {"value": "Candelaria de la Frontera", "label":  "Candelaria de la Frontera"},
+        {"value": "Chalchuapa", "label":  "Chalchuapa"},
+        {"value": "Coatepeque", "label":  "Coatepeque"},
+        {"value": "El Congo", "label":  "El Congo"},
+        {"value": "El Porvenir", "label":  "El Porvenir"},
+        {"value": "Masahuat", "label":  "Masahuat"},
+        {"value": "Metapán", "label":  "Metapán"},
+        {"value": "San Antonio Pajonal", "label":  "San Antonio Pajonal"},
+        {"value": "San Sebastián Salitrillo", "label":  "San Sebastián Salitrillo"},
+        {"value": "Santa Ana", "label":  "Santa Ana"},
+        {"value": "Santa Rosa Guachipilín", "label":  "Santa Rosa Guachipilín"},
+        {"value": "Santiago de la Frontera", "label":  "Santiago de la Frontera"},
+        {"value": "Texistepeque", "label":  "Texistepeque"}
+
+        ]
+    }},
+
+
+
+
+
+    {"label": "Sonsonate", "value": {
+        "Departamento": "Sonsonate",
+        "Municipios": [
+        {"value": "Acajutla", "label":  "Acajutla"},
+        {"value": "Armenia", "label":  "Armenia"},
+        {"value": "Caluco", "label":  "Caluco"},
+        {"value": "Cuisnahuat", "label":  "Cuisnahuat"},
+        {"value": "Izalco", "label":  "Izalco"},
+        {"value": "Juayua", "label":  "Juayua"},
+        {"value": "Nahuizalco", "label":  "Nahuizalco"},
+        {"value": "Nahulingo", "label":  "Nahulingo"},
+        {"value": "Salcoatitán", "label":  "Salcoatitán"},
+        {"value": "San Antonio del Monte", "label":  "San Antonio del Monte"},
+        {"value": "San Julián", "label":  "San Julián"},
+        {"value": "Santa Catarina Masahuat", "label":  "Santa Catarina Masahuat"},
+        {"value": "Santa Isabel Ishuatán", "label":  "Santa Isabel Ishuatán"},
+        {"value": "Santo Domingo de Guzmán", "label":  "Santo Domingo de Guzmán"},
+        {"value": "Sonsonate", "label":  "Sonsonate"},
+        {"value": "Sonzacate", "label":  "Sonzacate"}
+
+        ]
+    }},
+
+
+
+
+
+    {"label": "Usulután", "value": {
+        "Departamento": "Usulután",
+        "Municipios": [
+        {"value": "Alegría", "label":  "Alegría"},
+        {"value": "Berlín", "label":  "Berlín"},
+        {"value": "California", "label":  "California"},
+        {"value": "Concepción Batres", "label":  "Concepción Batres"},
+        {"value": "El Triunfo", "label":  "El Triunfo"},
+        {"value": "Ereguayquín", "label":  "Ereguayquín"},
+        {"value": "Estanzuelas", "label":  "Estanzuelas"},
+        {"value": "Jiquilisco", "label":  "Jiquilisco"},
+        {"value": "Jucuapa", "label":  "Jucuapa"},
+        {"value": "Jucuarán", "label":  "Jucuarán"},
+        {"value": "Mercede Umaña", "label":  "Mercede Umaña"},
+        {"value": "Nueva Granada", "label":  "Nueva Granada"},
+        {"value": "Ozatlán", "label":  "Ozatlán"},
+        {"value": "Puerto El Triunfo", "label":  "Puerto El Triunfo"},
+        {"value": "San Agustín", "label":  "San Agustín"},
+        {"value": "San Buenaventura", "label":  "San Buenaventura"},
+        {"value": "San Dionisio", "label":  "San Dionisio"},
+        {"value": "San Francisco Javier", "label":  "San Francisco Javier"},
+        {"value": "Santa Elena", "label":  "Santa Elena"},
+        {"value": "Santa María", "label":  "Santa María"},
+        {"value": "Santiago de María", "label":  "Santiago de María"},
+        {"value": "Tecapán", "label":  "Tecapán"},
+        {"value": "Usulután", "label":  "Usulután"}
+
+        ]
+    }}
+
+]
