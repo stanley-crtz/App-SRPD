@@ -7,6 +7,7 @@ export const Home = (props) => {
     return (
         <Fragment>
             <HeaderComponent></HeaderComponent>
+            
             <section className="text-center team">
                 <div className="container p-5">
                     {/* <h1 className="text-center text-dark"></h1> */}
