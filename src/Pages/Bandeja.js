@@ -96,7 +96,7 @@ export default class Bandeja extends Component {
 
     render(){
         var docentes = null;
-        if (this.state.Docentes.mostrar !== null) {
+        if (this.state.Docentes.mostrar !== null && !this.state.Docentes.mostrar) {
             docentes = this.state.Docentes.mostrar.map((value, i) => {
                 return <User docente={value} docenteSelection={this.docenteSelection} key={i}></User>
             })
