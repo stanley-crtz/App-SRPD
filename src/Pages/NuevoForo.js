@@ -7,6 +7,7 @@ import HeaderComponent from '../Components/Header'
 import JWT from '../Class/JWT'
 import Identificador from '../Class/Identificador'
 import { Redirect } from 'react-router-dom'
+import NotAccess from '../Components/NotAccess'
 
 export default class NewForo extends Component {
 
@@ -104,7 +105,7 @@ export default class NewForo extends Component {
                 <HeaderComponent></HeaderComponent>
                 {
                     !Identificador.validatorIdentificador() ? (
-                        <label>No tienes permiso para usar este modulo</label>
+                       <NotAccess></NotAccess>
                     ) : (
                         <Editor onSubmit={this.submitTest}></Editor>
                     )

@@ -318,6 +318,8 @@ export default class ShowInfoPostgrado extends Component {
 
         const {Postgrado} = this.props.data.Academica
 
+        const mod = this.props.mod
+
         return(
             <form onSubmit={this.sendUpdate}>
                 <div className="flex-row">
@@ -325,7 +327,7 @@ export default class ShowInfoPostgrado extends Component {
                         <img id="imgFotoPostgrado" className="img-size width-50" src={Postgrado && Postgrado.TituloImage ? Global.servidor + "getImagePostrado/" + Postgrado.TituloImage : "https://sisterhoodofstyle.com/wp-content/uploads/2018/02/no-image-1.jpg"} alt={Postgrado ? Postgrado.Universidad : 'Vista Previa'}/>
                         <div className="btn btn-primary btn-file">
                             Cambiar Titulo
-                            <input id="imagenPerfil" type="file" onChange={this.changeImage}/>
+                            <input id="imagenPerfil" type="file" onChange={this.changeImage} disabled={!mod}/>
                         </div>
                     </div>
                     <div className="flex-colum center-colum width-combo">
@@ -340,6 +342,7 @@ export default class ShowInfoPostgrado extends Component {
                                 name="Universidad"
                                 options={this.state.Universidades}
                                 onChange={this.changeState}
+                                isDisabled={!mod}
                             ></Creatable>
                             {this.validator.message('required', this.state.Informacion.Academica.Postgrado ? this.state.Informacion.Academica.Postgrado.Universidad : 'f', 'required')}
                         </strong>
@@ -354,15 +357,20 @@ export default class ShowInfoPostgrado extends Component {
                                 name="Postgrado"
                                 options={this.state.Postgrados}
                                 onChange={this.changeState}
+                                isDisabled={!mod}
                             ></Creatable>
                             {this.validator.message('required', this.state.Informacion.Academica.Postgrado ? this.state.Informacion.Academica.Postgrado.Postgrado : 'f', 'required')}
                         </strong>
                     </div>
                 </div>
-                <div className="controls-content">
-                    <input type="submit" className="editor-button publish edit-docente-grupo" value="Guardar"></input>
-                    <Link to="/Buscador" className="editor-button cancel edit-docente-grupo">Cancelar</Link>
-                </div>
+                {
+                    mod &&
+                    <div className="controls-content">
+                        <input type="submit" className="editor-button publish edit-docente-grupo" value="Guardar"></input>
+                        <Link to="/Buscador" className="editor-button cancel edit-docente-grupo">Cancelar</Link>
+                    </div>
+                }
+                
             </form>
         )
     }

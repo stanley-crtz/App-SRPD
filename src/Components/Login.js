@@ -9,6 +9,11 @@ import Identificador from '../Class/Identificador'
 
 export default class LoginComponent extends Component {
 
+    constructor(props){
+        super(props);
+        this.connectSocket = Global.ConnectChat;
+    }
+
     Usuario = React.createRef();
     Password = React.createRef();
     AdminRef = React.createRef();
@@ -41,6 +46,7 @@ export default class LoginComponent extends Component {
             .then(resp => {
                 Identificador.setIdentificador(resp.data.user[0]._id)
                 JWT.setJWT(resp.data.token)
+                this.connectSocket.emit('newVisit', {});
                 return resp.data.token;
             })
             .then( resp => {
@@ -96,7 +102,7 @@ export default class LoginComponent extends Component {
                     </div>
                 </div>
 
-                <Link to="/">¿Has olvidado la contraseña?</Link>
+                <Link to="/Recuperar">¿Has olvidado la contraseña?</Link>
                 
                 <div className="type-access">
                     <div className="type-access-container">

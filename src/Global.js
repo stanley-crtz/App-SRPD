@@ -1,8 +1,10 @@
 import io from 'socket.io-client'
 
 const Global = {
-    servidor: 'http://192.168.1.9:3900/',
-    ConnectChat: io('http://192.168.1.9:3380'),
+    // servidor: 'http://localhost:3900/',
+    // ConnectChat: io('http://localhost:3380'),
+    servidor: 'https://srpd-backend.herokuapp.com/',
+    ConnectChat: io('https://chat-srpd.herokuapp.com/'),
     EstadoCivil: [
         {value: "Soltero/a", label: "Soltero/a"},
         {value: "Comprometido/a", label: "Comprometido/a"},

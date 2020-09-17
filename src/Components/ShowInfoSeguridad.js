@@ -16,7 +16,7 @@ export default class ShowInfoSeguridad extends Component {
                 required: "Este campo es requerido",
                 alpha_num: "Solo se permiten caracteres alfanumericos",
                 min: "Solo se permite un minimo de 3 caracteres",
-                max: "Solo s permite un maximo de 8 caracteres"
+                max: "Solo se permite un maximo de 8 caracteres"
             }
         });
     }

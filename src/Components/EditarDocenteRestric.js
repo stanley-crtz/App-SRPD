@@ -1,17 +1,16 @@
 import React, {Component, Fragment} from 'react'
-import HeaderComponent from '../Components/Header'
-import SideBarEditar from '../Components/SideBarEditar'
+import SideBarEditar from './SideBarEditar'
 import Axios from 'axios'
 import Global from '../Global'
-import ShowInfoGeneral from '../Components/ShowInfoGeneral'
-import ShowInfoAcademica from '../Components/ShowInfoAcademica'
-import ShowInfoPostgrado from '../Components/ShowInfoPostgrado'
-import ShowInfoCarrera from '../Components/ShowInfoCarrera'
-import ShowInfoOpcional from '../Components/ShowInfoOpcional'
-import ShowInfoSeguridad from '../Components/ShowInfoSeguridad'
+import ShowInfoGeneral from './ShowInfoGeneral'
+import ShowInfoAcademica from './ShowInfoAcademica'
+import ShowInfoPostgrado from './ShowInfoPostgrado'
+import ShowInfoCarrera from './ShowInfoCarrera'
+import ShowInfoOpcional from './ShowInfoOpcional'
+import ShowInfoSeguridad from './ShowInfoSeguridad'
 import JWT from '../Class/JWT'
 import Identificador from '../Class/Identificador'
-import NotAccess from '../Components/NotAccess'
+import NotAccess from './NotAccess'
 
 export default class EditarDocente extends Component {
 
@@ -32,13 +31,12 @@ export default class EditarDocente extends Component {
     }
     
     UNSAFE_componentWillMount(){
-        const id = this.props.match.params.id;
 
         const headers = {
             authorization: `Bearer ${JWT.getJWT()}`
         }
 
-        Axios.get(Global.servidor + "getDocente/" + id, {headers})
+        Axios.get(Global.servidor + "getDocente/" + Identificador.getIdentificador(), {headers})
             .then((resp) => {
                 this.setState({
                     status: resp.data.status,
@@ -57,22 +55,22 @@ export default class EditarDocente extends Component {
 
         switch (this.state.show) {
             case "General":
-                show = <ShowInfoGeneral data={this.state.data[0]} id={this.props.match.params.id}></ShowInfoGeneral>
+                show = <ShowInfoGeneral data={this.state.data[0]} id={Identificador.getIdentificador()}></ShowInfoGeneral>
                 break;
             case "Academica":
-                show = <ShowInfoAcademica mod={true} data={this.state.data[0]} id={this.props.match.params.id}></ShowInfoAcademica>
+                show = <ShowInfoAcademica mod={false} data={this.state.data[0]} id={Identificador.getIdentificador()}></ShowInfoAcademica>
                 break;
             case "Postgrado":
-                show = <ShowInfoPostgrado mod={true} data={this.state.data[0]} id={this.props.match.params.id}></ShowInfoPostgrado>
+                show = <ShowInfoPostgrado mod={false} data={this.state.data[0]} id={Identificador.getIdentificador()}></ShowInfoPostgrado>
                 break;
             case "Carrera":
-                show = <ShowInfoCarrera mod={true} data={this.state.data[0]} id={this.props.match.params.id}></ShowInfoCarrera>
+                show = <ShowInfoCarrera mod={false} data={this.state.data[0]} id={Identificador.getIdentificador()}></ShowInfoCarrera>
                 break;
             case "Opcional":
-                show = <ShowInfoOpcional data={this.state.data[0]} id={this.props.match.params.id}></ShowInfoOpcional>
+                show = <ShowInfoOpcional data={this.state.data[0]} id={Identificador.getIdentificador()}></ShowInfoOpcional>
                 break;
             case "Seguridad":
-                show = <ShowInfoSeguridad data={this.state.data[0]} id={this.props.match.params.id}></ShowInfoSeguridad>
+                show = <ShowInfoSeguridad data={this.state.data[0]} id={Identificador.getIdentificador()}></ShowInfoSeguridad>
                 break;
             default:
                 break;
@@ -80,21 +78,19 @@ export default class EditarDocente extends Component {
 
         return (
             <Fragment>
-                <HeaderComponent></HeaderComponent>
-                
                 {
                     this.state.status === "cargando" ? (
                         <label>cargando...</label>
                     ) : this.state.status === "warning" ? (
                         <label>Esta direccion no existe</label>
-                    ) : !Identificador.validatorIdentificador() ?(
+                    ) : Identificador.validatorIdentificador() ? (
                         <div className="center">
                             <section id="content">
-                                <h2 className="subheader">Editar Docente</h2>
+                                <h2 className="subheader">Configura tu cuenta</h2>
                                 <div id="container-busqueda">
                                     <SideBarEditar
                                         change={this.changeShow}
-                                        idDocente={this.props.match.params.id}
+                                        idDocente={Identificador.getIdentificador()}
                                     ></SideBarEditar>
                                     <div className="container-resultados max-content">
                                         {

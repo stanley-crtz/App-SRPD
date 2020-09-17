@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import Axios from 'axios'
+import Global from '../Global';
+import JWT from '../Class/JWT';
+import Identificador from '../Class/Identificador';
+import Swal from 'sweetalert2';
 
 function SideBarEditar(props) {
   // Declara una nueva variable de estado, que llamaremos "count".
@@ -50,6 +55,52 @@ function SideBarEditar(props) {
         setSeguridad(false)
     }
 
+    const dowloadCurriculum = (e) => {
+        const headers = {
+            authorization: `Bearer ${JWT.getJWT()}`
+        }
+        var id;
+        if (Identificador.validatorIdentificador()) {
+            id = Identificador.getIdentificador()
+        } else {
+            id = props.idDocente
+        }
+
+        Swal.fire({
+            title: 'Generando Curriculum...',
+            allowOutsideClick: false,
+            onBeforeOpen: () => {
+                Swal.showLoading()
+            },
+        });
+
+        Axios({
+            url: Global.servidor + "generatorPDF/" + id,
+            method: 'GET',
+            responseType: 'blob',
+            headers
+        })
+        .then((res) => {
+            // Creamos la url del objeto descargado
+            const url = window.URL.createObjectURL(new Blob([res.data]))
+            // Creamos una etiqueta a para la descarga
+            const link = document.createElement('a')
+            // Le asiganamos la descarga a la etiqueta a
+            link.href = url
+            // Le asignamos la funcion y nombre
+            link.setAttribute('download', 'Curriculum.pdf')
+            // Se lo enviamos al body
+            document.body.appendChild(link);
+            // Descargamos el archivo
+            link.click();
+
+            Swal.fire('Descarga Completada', '', 'success')
+        })
+        .catch((err) => {
+            Swal.fire('Error', 'Intentelo mas tarde', 'error')
+        })
+    }
+
     return (
         <aside id="sidebar">
             <div id="search" className="sidebar-item">
@@ -71,6 +122,9 @@ function SideBarEditar(props) {
                     }}></input>
                     <input type="button" className={"sub-menu" + (Seguridad ? " sub-menu-active" : '')} value="Seguridad" onClick={(e) => {
                         changeState("Seguridad")
+                    }}></input>
+                    <input type="button" className="sub-menu" value="Curriculum" onClick={(e) => {
+                        dowloadCurriculum(e)
                     }}></input>
                 </div>
             </div>

@@ -339,6 +339,8 @@ export default class ShowInfoAcademica extends Component {
             <input type="button" className="custom-input" onClick={onClick} value={value}/>
         );
 
+        const mod = this.props.mod
+
         return(
             <form onSubmit={this.sendUpdate}>
                 <div className="flex-row">
@@ -355,6 +357,7 @@ export default class ShowInfoAcademica extends Component {
                                     dropdownMode="select"
                                     todayButton="Fecha Actual"
                                     name="Egreso"
+                                    disabled={!mod}
                                     customInput={<CustomButtonDate></CustomButtonDate>}
                                 ></DatePicker>
                         </strong>
@@ -369,6 +372,7 @@ export default class ShowInfoAcademica extends Component {
                                 name="Universidad"
                                 options={this.state.Universidades}
                                 onChange={this.changeState}
+                                isDisabled={!mod}
                             ></Creatable>
                             {this.validator.message('required', this.state.Informacion.Academica.Universidad, 'required')}
                         </strong>
@@ -383,6 +387,7 @@ export default class ShowInfoAcademica extends Component {
                                 name="Carrera"
                                 options={this.state.Carreras}
                                 onChange={this.changeState}
+                                isDisabled={!mod}
                             ></Creatable>
                             {this.validator.message('required', this.state.Informacion.Academica.Carrera, 'required')}
                         </strong>
@@ -397,6 +402,7 @@ export default class ShowInfoAcademica extends Component {
                                 name="Nivel Docencia"
                                 options={this.NivelDocente}
                                 onChange={this.changeState}
+                                isDisabled={!mod}
                             ></Select>
                             {this.validator.message('required', this.state.Informacion.Academica.NivelDocente, 'required')}
                         </strong>
@@ -411,11 +417,12 @@ export default class ShowInfoAcademica extends Component {
                                 name="Categoria Docencia"
                                 options={this.CategoriaDocente}
                                 onChange={this.changeState}
+                                isDisabled={!mod}
                             ></Select>
                             {this.validator.message('required', this.state.Informacion.Academica.CategoriaDocente, 'required')}
                         </strong>
                         <strong>CUM: 
-                            <input type="text" className="form-control" defaultValue={CUM} onChange={this.changeState} ref={this.CUMRef}></input>
+                            <input type="text" className="form-control" defaultValue={CUM} onChange={this.changeState} ref={this.CUMRef} disabled={!mod}></input>
                             {this.validator.message('required', this.state.Informacion.Academica.CUM, 'required|numeric|min:7,num|max:10,num')}
                         </strong>
                     </div>
@@ -423,14 +430,17 @@ export default class ShowInfoAcademica extends Component {
                         <img className="img-size width-50" src={Global.servidor + "getImageTitulo/" + TituloImage} alt={Universidad} id="imgFotoTitulo"/>
                         <div className="btn btn-primary btn-file">
                             Cambiar Titulo
-                            <input id="imagenPerfil" type="file" onChange={this.changeImageTitulo}/>
+                            <input id="imagenPerfil" type="file" onChange={this.changeImageTitulo} disabled={!mod}/>
                         </div>
                     </div>
                 </div>
-                <div className="controls-content">
-                    <input type="submit" className="editor-button publish edit-docente-grupo" value="Guardar"></input>
-                    <Link to="/Buscador" className="editor-button cancel edit-docente-grupo">Cancelar</Link>
-                </div>
+                {
+                    mod &&
+                    <div className="controls-content">
+                        <input type="submit" className="editor-button publish edit-docente-grupo" value="Guardar"></input>
+                        <Link to="/Buscador" className="editor-button cancel edit-docente-grupo">Cancelar</Link>
+                    </div>
+                }
             </form>
         )
     }

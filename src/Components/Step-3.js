@@ -15,6 +15,7 @@ export default class Step3 extends Component {
         this.Estado = Boolean
 
         this.validator = new SimpleReactValidator({
+            element: message => <div className="color-white">{message}</div>,
             messages: {
                 required: "Este campo es requerido"
             }

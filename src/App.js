@@ -12,6 +12,8 @@ import Foro from './Pages/Foro';
 import ForoComment from './Pages/ForoComment'
 import EditForo from './Pages/EditarForo'
 import EditDocente from './Pages/EditarDocente'
+import RecuperarCuenta from './Pages/RecuperarCuenta'
+import forgetPassword from './Pages/forgetPassword'
 import Footer from './Components/Footer'
 
 class App extends Component {
@@ -34,6 +36,8 @@ class App extends Component {
               <ProtectedRoute exact path="/Foro/Editar/:id" component={EditForo} />
               <ProtectedRoute exact path="/Foro" component={Foro}/>
               <ProtectedRoute exact path="/Foro/:id" component={ForoComment} />
+              <Route exact path="/Recuperar" component={RecuperarCuenta} />
+              <Route exact path="/Recuperar/:id/:type" component={forgetPassword} />
               <Route path="*" component={() => "404 NOT FOUND"} />
             </Switch>
           </BrowserRouter>

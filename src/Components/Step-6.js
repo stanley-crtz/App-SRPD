@@ -8,6 +8,7 @@ export default class Step4 extends Component {
         super(props);
 
         this.validator = new SimpleReactValidator({
+            element: message => <div className="color-white">{message}</div>,
             messages: {
                 required: "Este campo es requerido",
                 alpha_num: "Solo se permiten caracteres alfanumericos",
