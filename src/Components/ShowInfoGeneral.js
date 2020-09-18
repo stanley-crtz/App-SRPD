@@ -3,7 +3,7 @@ import Municipios from '../JSON/Municipios.json'
 import Select from 'react-select';
 import Global from '../Global';
 import Moment from 'moment';
-import SimpleReactValidator from 'simple-react-validator';
+import SimpleReactValidator from 'simple-react-validator-sv-stanley'
 import {Link, Redirect} from 'react-router-dom'
 import Swal from 'sweetalert2'
 import Validacion from '../Validaciones/Validacion';
