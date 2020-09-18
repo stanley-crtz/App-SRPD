@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import SimpleReactValidator from 'simple-react-validator';
 import Select from 'react-select';
 import Global from '../Global'
 import Swal from 'sweetalert2'
@@ -7,6 +6,7 @@ import Moment from 'moment'
 import Axios from 'axios'
 import Municipios from '../JSON/Municipios.json'
 import JWT from '../Class/JWT';
+import SimpleReactValidator from 'simple-react-validator-sv-stanley'
 
 export default class Step1 extends Component {
 
