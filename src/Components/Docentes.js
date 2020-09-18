@@ -8,7 +8,6 @@ export default class Docentes extends Component {
     }
 
     render(){
-
         if (this.props.Data != null) {
             
             var Docentes = this.props.Data.map((val) => {

@@ -150,8 +150,6 @@ export default class Step1 extends Component {
             Correo: this.CorreoRef.current.value.trim(),
             PerfilImage: this.state.PerfilImage
         }
-
-        console.log(prueba);
         
         this.setState({
             Nombre: this.NombreRef.current.value.trim(),
