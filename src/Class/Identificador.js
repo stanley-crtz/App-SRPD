@@ -9,7 +9,11 @@ class Identificador {
 
     setIdentificador(id){
         this.Identificador = id
-        document.cookie = `Docente = ${id};`
+
+        let date = new Date()
+        date.setDate( date.getDate() + 13);
+
+        document.cookie = `Docente = ${id}; expires = ${date.toUTCString()};`
     }
 
     clearIdentificador(){

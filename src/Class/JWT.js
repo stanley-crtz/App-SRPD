@@ -8,7 +8,11 @@ class JWT {
 
     setJWT(jwt){
         this.JWT = jwt;
-        document.cookie = `JWT = ${jwt};`
+
+        let date = new Date()
+        date.setDate( date.getDate() + 13);
+        
+        document.cookie = `JWT = ${jwt}; expires = ${date.toUTCString()};`
     }
 
     clearJWT(){
