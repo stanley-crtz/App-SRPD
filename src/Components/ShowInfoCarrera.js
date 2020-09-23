@@ -353,7 +353,7 @@ export default class ShowInfoCarrera extends Component {
                         </strong>
                     </div>
                     <div className="flex-colum">
-                        <img id="imgFotoOtraCarrera" className="img-size width-50" src={OtraCarrera && OtraCarrera.TituloImage ? Global.servidor + "getImageOtraCarrera/" + OtraCarrera.TituloImage : "https://sisterhoodofstyle.com/wp-content/uploads/2018/02/no-image-1.jpg"} alt={OtraCarrera ? OtraCarrera.Universidad : "Vista Previa"}/>
+                        <img id="imgFotoOtraCarrera" className="img-size width-50" src={OtraCarrera && OtraCarrera.TituloImage ? OtraCarrera.TituloImage : "https://sisterhoodofstyle.com/wp-content/uploads/2018/02/no-image-1.jpg"} alt={OtraCarrera ? OtraCarrera.Universidad : "Vista Previa"}/>
                         <div className="btn btn-primary btn-file">
                             Cambiar Titulo
                             <input id="imagenPerfil" type="file" onChange={this.changeImage} disabled={!mod}/>

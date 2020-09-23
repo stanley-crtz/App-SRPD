@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import Global from '../../Global';
 import Moment from 'moment'
 
 export default class User extends Component {
@@ -12,7 +11,7 @@ export default class User extends Component {
         const docente = this.props.docente;
         return (
             <div className="user" onClick={this.docenteSelection}>
-                <img className="circle-img" src={Global.servidor + "getImagePerfil/" + docente.PerfilImage} alt=""/>
+                <img className="circle-img" src={docente.PerfilImage} alt=""/>
                 <div className="user-info">
                     <div className="user-title">
                         <label className="contact">{docente.Nombre}</label>

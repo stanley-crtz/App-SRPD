@@ -111,7 +111,7 @@ export default class Foro extends Component {
             <div className="Tarjeta">
                 <div className="Tarjeta-Usuario">
                     
-                    <img className="circle-img Tarjeta-circle-image" src={Global.servidor + "getImagePerfil/" + data.PerfilImage[0]} alt=""/>
+                    <img className="circle-img Tarjeta-circle-image" src={data.PerfilImage[0]} alt=""/>
                     <div className="Tarjeta-Publish">
                         <h2>{data.Nombre[0]}</h2>
                         <label>{Moment(data.datePublish).fromNow(Date.now)}</label>
@@ -131,7 +131,7 @@ export default class Foro extends Component {
                     {
                         data.imagen !== null &&
                             <div className="Tarjeta-Image">
-                                <img src={Global.servidor + "getImageForo/" + data.imagen} alt={data.titulo}></img>
+                                <img src={data.imagen} alt={data.titulo}></img>
                             </div>
                     }
                     

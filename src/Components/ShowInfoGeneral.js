@@ -214,7 +214,7 @@ export default class ShowInfoGeneral extends Component {
             <form onSubmit={this.sendUpdate} action="">
                 <div className="flex-row">
                     <div className="flex-colum">
-                        <img className="img-size width-50" src={Global.servidor + "getImagePerfil/" + PerfilImage} alt={Nombre} id="imgFotoPerfil"/>
+                        <img className="img-size width-50" src={PerfilImage} alt={Nombre} id="imgFotoPerfil"/>
                         <div className="btn btn-primary btn-file">
                             Cambiar Imagen
                             <input id="imagenPerfil" type="file" onChange={this.changeImagePerfil}/>

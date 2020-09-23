@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import Global from '../Global'
 import Moment from 'moment'
 
 export default class ForoChat extends Component {
@@ -10,7 +9,7 @@ export default class ForoChat extends Component {
             <div className="container-chat-others">
                 
                 <div className="others">
-                    <img className="circle-img" src={Global.servidor + "getImagePerfil/" + data.PerfilImage[0]} alt=""/>
+                    <img className="circle-img" src={data.PerfilImage[0]} alt=""/>
                     
                     <div className="Nombre-Incorporado">
                         <div className="full">
@@ -20,7 +19,7 @@ export default class ForoChat extends Component {
                         <div className="chat-others full up">
                             {
                                 data.imagen !== null ? (
-                                    <img className="image-chat" src={Global.servidor + "getImageForoComment/" + data.imagen} alt="foto Comentario" />
+                                    <img className="image-chat" src={data.imagen} alt="foto Comentario" />
                                 ) : (
                                     data.comment
                                 )

@@ -427,7 +427,7 @@ export default class ShowInfoAcademica extends Component {
                         </strong>
                     </div>
                     <div className="flex-colum">
-                        <img className="img-size width-50" src={Global.servidor + "getImageTitulo/" + TituloImage} alt={Universidad} id="imgFotoTitulo"/>
+                        <img className="img-size width-50" src={TituloImage} alt={Universidad} id="imgFotoTitulo"/>
                         <div className="btn btn-primary btn-file">
                             Cambiar Titulo
                             <input id="imagenPerfil" type="file" onChange={this.changeImageTitulo} disabled={!mod}/>

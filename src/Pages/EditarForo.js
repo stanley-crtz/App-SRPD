@@ -114,7 +114,7 @@ export default class NewForo extends Component {
                 document.getElementById("editor").innerHTML = resp.data.Foros[0].descripcion;
 
                 if (resp.data.Foros[0].imagen !== null) {
-                    document.getElementById("imagePrevia").src = Global.servidor + "getImageForo/" + resp.data.Foros[0].imagen
+                    document.getElementById("imagePrevia").src = resp.data.Foros[0].imagen
                 }
 
             })

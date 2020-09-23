@@ -324,7 +324,7 @@ export default class ShowInfoPostgrado extends Component {
             <form onSubmit={this.sendUpdate}>
                 <div className="flex-row">
                     <div className="flex-colum">
-                        <img id="imgFotoPostgrado" className="img-size width-50" src={Postgrado && Postgrado.TituloImage ? Global.servidor + "getImagePostrado/" + Postgrado.TituloImage : "https://sisterhoodofstyle.com/wp-content/uploads/2018/02/no-image-1.jpg"} alt={Postgrado ? Postgrado.Universidad : 'Vista Previa'}/>
+                        <img id="imgFotoPostgrado" className="img-size width-50" src={Postgrado && Postgrado.TituloImage ? Postgrado.TituloImage : "https://sisterhoodofstyle.com/wp-content/uploads/2018/02/no-image-1.jpg"} alt={Postgrado ? Postgrado.Universidad : 'Vista Previa'}/>
                         <div className="btn btn-primary btn-file">
                             Cambiar Titulo
                             <input id="imagenPerfil" type="file" onChange={this.changeImage} disabled={!mod}/>

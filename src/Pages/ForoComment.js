@@ -144,7 +144,7 @@ export default class ForoComment extends Component {
                                 <div className="title">
                                     <div className="Tarjeta-Usuario">
                                         
-                                        <img className="circle-img Tarjeta-circle-image" src={Global.servidor + "getImagePerfil/" + data.PerfilImage[0]} alt={data.Nombre[0]}/>
+                                        <img className="circle-img Tarjeta-circle-image" src={data.PerfilImage[0]} alt={data.Nombre[0]}/>
                                         <div className="Tarjeta-Publish">
                                             <h2>{data.Nombre[0]}</h2>
                                             <label>{Moment(data.datePublish).fromNow(Date.now)}</label>
@@ -162,7 +162,7 @@ export default class ForoComment extends Component {
                                         {
                                             data.imagen !== null &&
                                             <div className="Tarjeta-Image-Foro">
-                                                <img src={Global.servidor + "getImageForo/" + data.imagen} alt={data.titulo}></img>
+                                                <img src={data.imagen} alt={data.titulo}></img>
                                             </div>
                                         }
                                         

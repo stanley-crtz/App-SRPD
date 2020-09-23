@@ -52,7 +52,7 @@ export default class Docente extends Component {
         return (
             <div className="Docente">
                 <div className="Docente-Image">
-                    <img src={Global.servidor + "getImagePerfil/" + data.PerfilImage} alt={data.Nombre}></img>
+                    <img src={data.PerfilImage} alt={data.Nombre}></img>
                 </div>
                 <div className="Docente-Info">
                     <div className="Docente-Name">
