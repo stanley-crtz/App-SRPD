@@ -89,7 +89,6 @@ export default class Bandeja extends Component {
 
     componentDidMount(){
         this.connectSocket.on("searchMSG", (data) => {
-            console.log("Cambio");
             this.getDocentes();
         })
     }
