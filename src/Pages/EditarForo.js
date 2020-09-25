@@ -109,7 +109,6 @@ export default class NewForo extends Component {
                 this.setState({
                     informacion: resp.data.Foros[0]
                 })
-                console.log(resp.data.Foros[0]);
                 document.getElementById("tituloComment").value = resp.data.Foros[0].titulo;
                 document.getElementById("editor").innerHTML = resp.data.Foros[0].descripcion;
 

@@ -235,8 +235,6 @@ export default class RegistroDocente extends Component {
             authorization: `Bearer ${JWT.getJWT()}`
         }
 
-        console.log(data);
-
         Axios.post(Global.servidor + "newDocente", data, {headers})
             .then((resp) => {
                 Swal.fire(

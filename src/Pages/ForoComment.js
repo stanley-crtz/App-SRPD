@@ -105,7 +105,7 @@ export default class ForoComment extends Component {
         this.getForo()
         this.searchComment()
         this.connectSocket.on("recivedComment", (data) => {
-            console.log(data);
+            
             this.setState({
                 informacion: this.state.informacion,
                 comentarios: data

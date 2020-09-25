@@ -200,8 +200,6 @@ export default class ShowInfoGeneral extends Component {
             Informacion: this.props.data
         })
 
-        console.log(this.props.data);
-
     }
 
     render(){

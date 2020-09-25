@@ -116,8 +116,6 @@ export default class ShowInfoOpcional extends Component {
 
         Informacion.Opcional = Opcional
 
-        console.log(Informacion.Opcional);
-
         this.setState({
             Informacion
         })
