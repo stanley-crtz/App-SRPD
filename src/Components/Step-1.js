@@ -76,7 +76,6 @@ export default class Step1 extends Component {
         e.preventDefault()
 
         if (this.validator.allValid()) {
-            console.log(this.calcularEdad(this.state.FechaNac));
 
             if (this.calcularEdad(this.state.FechaNac) >= 21) {
 
