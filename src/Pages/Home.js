@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 // import Tarjeta from '../Components/Tarjeta'
 import HeaderComponent from '../Components/Header'
-import ChartLine from '../Components/ChartLine'
 import Identificador from '../Class/Identificador';
 import CharLine from '../Components/ChartLine';
 import EditarDocenteRestric from '../Components/EditarDocenteRestric'

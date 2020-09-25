@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Select from 'react-select';
 import Global from '../Global'
 import Swal from 'sweetalert2'
-import Moment from 'moment'
+// import Moment from 'moment'
 import Axios from 'axios'
 import Municipios from '../JSON/Municipios.json'
 import JWT from '../Class/JWT';
@@ -58,13 +58,27 @@ export default class Step1 extends Component {
         
     }
 
+    calcularEdad = (fecha) => {
+        var hoy = new Date();
+        var cumpleanos = new Date(fecha);
+        var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+        var m = hoy.getMonth() - cumpleanos.getMonth();
+    
+        if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
+            edad--;
+        }
+    
+        return edad;
+    }
+
     noRefresh = async (e) => {
         e.persist()
         e.preventDefault()
 
         if (this.validator.allValid()) {
+            console.log(this.calcularEdad(this.state.FechaNac));
 
-            if (Moment().diff(this.state.FechaNac, 'years') >= 22) {
+            if (this.calcularEdad(this.state.FechaNac) >= 21) {
 
                 const imagen = document.getElementById("imagenPerfil").files.length
 
@@ -88,7 +102,7 @@ export default class Step1 extends Component {
                 
             }
             else{
-                Swal.fire('Advertencia', 'Debe ser mayor de 21 años', 'info')
+                Swal.fire('Advertencia', 'Debe ser mayor o igual a 21 años', 'info')
             }
             
         } else {
@@ -137,19 +151,19 @@ export default class Step1 extends Component {
             Zona = this.ZonaUrbanaRef.current.value
         }
 
-        const prueba = {
-            Nombre: this.NombreRef.current.value.trim(),
-            Genero: Genero.trim(),
-            Estatus: Estatus.trim(),
-            FechaNac: this.FechaNacRef.current.value.trim(),
-            DUI: this.DUIRef.current.value.trim(),
-            Departamento: Departamento,
-            Municipio: Municipio,
-            Zona: Zona,
-            Celular: this.CelularRef.current.value.trim(),
-            Correo: this.CorreoRef.current.value.trim(),
-            PerfilImage: this.state.PerfilImage
-        }
+        // const prueba = {
+        //     Nombre: this.NombreRef.current.value.trim(),
+        //     Genero: Genero.trim(),
+        //     Estatus: Estatus.trim(),
+        //     FechaNac: this.FechaNacRef.current.value.trim(),
+        //     DUI: this.DUIRef.current.value.trim(),
+        //     Departamento: Departamento,
+        //     Municipio: Municipio,
+        //     Zona: Zona,
+        //     Celular: this.CelularRef.current.value.trim(),
+        //     Correo: this.CorreoRef.current.value.trim(),
+        //     PerfilImage: this.state.PerfilImage
+        // }
         
         this.setState({
             Nombre: this.NombreRef.current.value.trim(),

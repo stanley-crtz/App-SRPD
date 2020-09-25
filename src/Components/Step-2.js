@@ -388,7 +388,7 @@ export default class Step2 extends Component {
 
                             <div className="form-group width-12">
                                 <h3 className="sub-form">CUM</h3>
-                                <input type="number" className="form-control" placeholder="CUM*" maxLength="2" onChange={this.changeState} ref={this.CumRef}/> 
+                                <input type="number" className="form-control" placeholder="CUM*" maxLength="5" onChange={this.changeState} ref={this.CumRef} step="0.01"/> 
                                 {this.validator.message('required', this.state.Academica.CUM, 'required|numeric|min:7,num|max:10,num')}
                             </div>
                                       
