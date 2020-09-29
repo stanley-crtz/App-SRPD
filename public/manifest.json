@@ -1,5 +1,5 @@
 {
-  "short_name": "SRP",
+  "short_name": "SRPD",
   "name": "Sistema de Registro de Profesionales Docentes",
   "icons": [
     {
@@ -9,7 +9,7 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

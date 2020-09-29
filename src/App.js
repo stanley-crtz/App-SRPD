@@ -15,6 +15,7 @@ import EditDocente from './Pages/EditarDocente'
 import RecuperarCuenta from './Pages/RecuperarCuenta'
 import forgetPassword from './Pages/forgetPassword'
 import Footer from './Components/Footer'
+import Error404 from './Pages/Error404'
 
 class App extends Component {
 
@@ -38,7 +39,7 @@ class App extends Component {
               <ProtectedRoute exact path="/Foro/:id" component={ForoComment} />
               <Route exact path="/Recuperar" component={RecuperarCuenta} />
               <Route exact path="/Recuperar/:id/:type" component={forgetPassword} />
-              <Route path="*" component={() => "404 NOT FOUND"} />
+              <Route exact path="**" component={Error404} />
             </Switch>
           </BrowserRouter>
         </div>
