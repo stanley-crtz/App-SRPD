@@ -30,7 +30,7 @@ export default class Bandeja extends Component {
             authorization: `Bearer ${JWT.getJWT()}`
         } 
 
-        Axios.get(Global.servidor + 'getDocentes', { headers})
+        Axios.get(Global.servidor + 'getDocentes/desc', { headers})
             .then((response) => {
                 this.setState({
                     Docentes: {
